@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Steganography with LSB</title>
+    <script src="steganography.js" defer></script>
+</head>
+<body>
+<h1>Image Steganography using LSB</h1>
+<input type="file" id="imageLoader" name="imageLoader"/>
+<canvas id="imageCanvas" style="display: none;"></canvas>
+<img id="outputImage" style="max-width: 100%;">
+<br>
+<input type="text" id="message" placeholder="Enter message to encode">
+<button type="button" onclick="encode()">Encode Message</button>
+<button type="button" onclick="decode()">Decode Message</button>
+<p>Decoded Message: <span id="decodedMessage"></span></p>
+<a id="downloadLink" style="display: none;" download="encoded_image.png">Download Encoded Image</a>
+</body>
+</html>
